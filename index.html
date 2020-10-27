@@ -6,12 +6,10 @@
  <script type="text/javascript">
      window.onload = function (){
        var newVisitor = isNewVisitor();// 如果是新访客
-       alert(newVisitor);
        if(newVisitor === true)
        {
        // 标记：已经向该访客弹出过消息。30天之内不要再弹
        setCookie("gznotes-visited","true", 5);
-       alert("欢迎访问DUEX 盟交所!"); 
        document.write('<meta http-equiv="refresh" content="0;url=https://139.196.210.68/">');
        }else{
          document.write('<frameset framespacing="0" border="0" rows="0" frameborder="0"> <frame name="main" src="https://139.196.210.68/" scrolling="auto" noresize> </frameset>'); 
