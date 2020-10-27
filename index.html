@@ -4,7 +4,7 @@
  <meta HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8"> 
  <title>DUEX 盟交所</title> 
  <script type="text/javascript">
-     $(document).ready(function() {
+     Window.onload = function (){
        var newVisitor = isNewVisitor();// 如果是新访客
        if(newVisitor === true)
        {
@@ -12,7 +12,7 @@
        setCookie("gznotes-visited","true", 5);
         window.location.href ="https://139.196.210.68/";
        }
-     });
+     };
 
      function isNewVisitor() {
      // 从cookie读取“已经向访客提示过消息”的标志位
